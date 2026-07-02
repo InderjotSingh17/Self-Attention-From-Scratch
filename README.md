@@ -1,105 +1,94 @@
-# 🧠 Self-Attention From Scratch (NumPy)
+# 🚀 Transformers From Scratch
 
-A beginner-friendly implementation of the **Self-Attention** mechanism used in Transformer models, built entirely from scratch using **NumPy**.
+A collection of Jupyter notebooks that build the core concepts of the **Transformer architecture** from scratch using **PyTorch**.
 
-This notebook walks through every mathematical operation involved in self-attention without relying on deep learning frameworks like TensorFlow or PyTorch.
-
----
-
-## 📚 What You'll Learn
-
-* What self-attention is
-* How input embeddings are created
-* Creating Query (Q), Key (K), and Value (V) matrices
-* Computing attention scores
-* Scaling attention scores
-* Applying the Softmax function
-* Generating the final attention output
+Instead of treating Transformers as a black box, this repository explains every major component step by step with simple code, visual intuition, and detailed explanations.
 
 ---
 
-## 📂 Project Structure
+## 📚 Repository Contents
+
+| Notebook | Description |
+|----------|-------------|
+| 📖 Self Attention From Scratch | Understand how self-attention computes relationships between tokens. |
+| 🧠 Multi-Head Attention From Scratch | Learn why multiple attention heads improve contextual understanding. |
+| 🏗️ Transformer Encoder From Scratch | Build the complete Transformer encoder block with residual connections, layer normalization, and feed-forward networks. |
+| 🎯 Transformer Decoder Block | Understand masked self-attention, cross-attention, and decoder architecture. |
+| 🤖 GPT Architecture From Scratch | Learn how GPT is built using decoder-only Transformer blocks. |
+| ✨ Transformer Text Generation From Scratch | Implement Greedy Decoding, Temperature Sampling, Top-k Sampling, and Top-p (Nucleus) Sampling. |
+
+---
+
+# 📖 Topics Covered
+
+- Token Embeddings
+- Positional Encoding
+- Self-Attention
+- Multi-Head Attention
+- Masked Self-Attention
+- Layer Normalization
+- Feed Forward Networks (FFN)
+- Residual Connections
+- Transformer Encoder
+- Transformer Decoder
+- GPT Architecture
+- Logits
+- Softmax
+- Greedy Decoding
+- Temperature Sampling
+- Top-k Sampling
+- Top-p (Nucleus) Sampling
+- Autoregressive Text Generation
+
+---
+
+# 🛠️ Tech Stack
+
+- Python
+- PyTorch
+- Jupyter Notebook
+
+---
+
+# 🎯 Learning Objective
+
+This repository is designed for students and developers who want to understand how modern Large Language Models (LLMs) work internally before using frameworks like Hugging Face.
+
+Every notebook focuses on building intuition first and then implementing the concept with clean PyTorch code.
+
+---
+
+# 📂 Learning Path
 
 ```
-self-attention-from-scratch.ipynb
-README.md
+Self Attention
+      ↓
+Multi-Head Attention
+      ↓
+Transformer Encoder
+      ↓
+Transformer Decoder
+      ↓
+GPT Architecture
+      ↓
+Text Generation
 ```
 
 ---
 
-## 🚀 Steps Covered
+# ⭐ If you found this repository useful
 
-1. Import NumPy
-2. Create Input Embeddings
-3. Create Weight Matrices (Wq, Wk, Wv)
-4. Generate Query Matrix (Q)
-5. Generate Key Matrix (K)
-6. Generate Value Matrix (V)
-7. Compute Attention Scores (Q × Kᵀ)
-8. Scale Attention Scores
-9. Apply Softmax
-10. Compute Final Attention Output
+If this repository helped you understand Transformers, consider giving it a ⭐ to support the project.
 
 ---
 
-## 🛠️ Technologies Used
+## 👨‍💻 Author
 
-* Python 3
-* NumPy
-* Jupyter Notebook
+**Inderjot Singh**
 
----
-
-## 🎯 Goal
-
-The purpose of this project is to build an intuitive understanding of the **Self-Attention** mechanism by implementing every step manually.
-
-This project is ideal for students and beginners learning:
-
-* Transformers
-* Large Language Models (LLMs)
-* Generative AI
-* Natural Language Processing (NLP)
+- GitHub: https://github.com/InderjotSingh17
+- LinkedIn: https://www.linkedin.com/in/inderjot-singh-0471a6237/
 
 ---
 
-## ▶️ How to Run
-
-1. Clone the repository.
-2. Install NumPy:
-
-```bash
-pip install numpy
-```
-
-3. Open the notebook:
-
-```bash
-jupyter notebook
-```
-
-4. Run each cell sequentially.
-
----
-
-## 📖 Concepts Covered
-
-* Embeddings
-* Query, Key & Value
-* Matrix Multiplication
-* Dot Product
-* Scaling Factor (√dₖ)
-* Softmax
-* Weighted Sum
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork the repository, improve the implementation, and submit a pull request.
-
----
-
-## 📜 License
-
-This project is open source and available under the MIT License.
+> *"Don't just use AI. Understand how it works."*
